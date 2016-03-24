@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+$no:none;
+$marco:0;
+$fuente:300;
+$cafe:#d29948;
+$rosa:#fef7ee;
+$80:80px;
+$65:65px;
+$20:20px;
+$13:13px
+$mayus:uppercase;
+$san:sans-serif;
+body {
+  background: #fff;
+  font-family: 'Lato', $san;
+  font-weight: $fuente;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000; }
+
+html {
+  height: 100%; }
+
+a {
+  color: #a5732a;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms; }
+  a:hover {
+    outline:$no;
+    text-decoration:$no;
+    color: #dab074; }
+  a:focus {
+    outline: $no;
+    outline-offset: $marco; }
+
+ul {
+  list-style: $no; }
+
+h1, h2, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', $san;
+  font-weight: $fuente; }
+
+h1, h2 {
+  color: #686868; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 18px; }
+
+.overflow {
+  overflow: hidden; }
+
+.uppercase {
+  text-transform:$mayus; }
+
+.btn-common {
+  font-size: 14px;
+  color: #797979;
+  border: 1px solid #dbb075;
+  font-family: 'Open Sans', $san;
+  font-weight: $fuente;
+  padding: 10px 25px; }
+
+#action .col-sm-5 {
+  position: absolute;
+  top: $marco;
+  height: 100%;
+  right: $marco; }
+
+.btn-common:hover,
+.btn-common:focus {
+  outline: $no;
+  background: $no;
+  box-shadow: $no;
+  color: $cafe; }
+
+.align-right {
+  text-align: right; }
+
+.inline {
+  display: inline-block; }
+
+.padding {
+  padding: $65 $marco; }
+
+.padding-bottom {
+  padding-bottom: $65; }
+.padding-top {
+  padding-top: 90px; }
+
+.padding-right {
+  padding-right: $80; }
+
+.padding-left {
+  padding-left: $80; }
+
+.margin-bottom {
+  margin-bottom: 35px; }
+
+/*************************
+*******Header******
+**************************/
+#header {
+  margin-bottom: $marco;
+  padding: 30px 0 60px 0; }
+  #header .navbar-inverse .container {
+    position: relative; }
+
+.social-icons ul li {
+  padding: 0 10px; }
+  .social-icons ul li:last-child {
+    padding-right: $marco; }
+
+.social-icons ul li a {
+  font-size: 18px;
+  color: #d3d3d3;
+  padding: $marco; }
+  .social-icons ul li a:hover, .social-icons ul li a:focus {
+    color: #dbb075;
+    background: $no; }
+
+#header .navbar {
+  background: #fff;
+  border: $marco;
+  margin-bottom: $marco; }
+#header .navbar-toggle {
+  margin-top: $20; }
+#header .navbar-brand {
+  padding: $marco;
+  margin-left: $marco; }
+  #header .navbar-brand h1, #header .navbar-brand h2 {
+    padding: $marco;
+    margin: $marco; }
+#header .navbar-nav.navbar-right > li a  {
+  color: #000;
+  font-size: 12px;
+  padding: $20;
+  text-transform: $mayus;
+  font-weight: $fuente; }
+#header .navbar-nav.navbar-right > li:last-child {
+  margin-right: $20; }
+#header .navbar-inverse .navbar-nav li a:hover {
+  color: $cafe; }
+#header .navbar-inverse .navbar-nav li.active > a, #header .navbar-inverse .navbar-nav li.active > a:focus {
+  background-color: inherit;
+  border: $marco;
+  color: $cafe; }
+#header .navbar-nav li ul.sub-menu {
+  display: $no;
+  list-style: $no;
+  padding: $marco;
+  margin: $marco; }
+  #header .navbar-nav li ul.sub-menu li a {
+    color: #818285;
+    padding: 5px 0;
+    font-size: $13;
+    display: block;
+    text-transform: capitalize; }
+  #header .navbar-nav li ul.sub-menu li:hover, #header .navbar-nav li ul.sub-menu li:focus {
+    background: $rosa;
+    color: $cafe; }
+  #header .navbar-nav li ul.sub-menu li .active {
+    background: $rosa;
+    color: $cafe;
+    position: relative; }
+    #header .navbar-nav li ul.sub-menu li .active i {
+      position: absolute;
+      font-size: 56px;
+      top: -$13;
+      color: #dab074; }
+    #header .navbar-nav li ul.sub-menu li .active .fa-angle-right {
+      left: -3px; }
+    #header .navbar-nav li ul.sub-menu li .active .fa-angle-left {
+      right: -3px; }
+
+#header .navbar-inverse .navbar-nav li.active > a,
+#header .navbar-inverse .navbar-nav li.active > a:focus,
+#header .navbar-nav.navbar-right li > a:hover,
+.navbar-inverse .navbar-nav > .open > a {
+  background-color: inherit;
+  border: $marco;
+  color: $cafe; }
+
